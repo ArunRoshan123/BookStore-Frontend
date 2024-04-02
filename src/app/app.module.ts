@@ -11,12 +11,14 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import { ForgotPasswordComponent } from './Components/forgot-password/forgot-password.component';
+import { DashboardComponent } from './Components/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     ForgotPasswordComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
