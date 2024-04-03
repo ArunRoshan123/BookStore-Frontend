@@ -18,6 +18,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ViewBookComponent } from './Components/view-book/view-book.component';
+import { PersonalDetailsComponent } from './Components/personal-details/personal-details.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ViewBookComponent } from './Components/view-book/view-book.component';
     BookComponent,
     DisplayBookComponent,
     ViewBookComponent,
+    PersonalDetailsComponent,
   ],
   imports: [
     BrowserModule,
