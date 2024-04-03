@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="one">
+     <h1>Books<span id="in">(128 items)</span></h1>
+     <mat-expansion-panel (opened)="panelOpenState = true " class="two"
+     (closed)="panelOpenState = false">
+     <mat-expansion-panel-header>
+     <mat-panel-title >
+     Sort by Revelance
+     </mat-panel-title>
+     </mat-expansion-panel-header>
+     <p>Price Low to High</p>
+     <p>Price High to Low</p>
+     <p>Newest Arrival</p>
+     </mat-expansion-panel>
+  </div>
+  <div class="books">
+    <!-- <div class="book">
+      <app-book></app-book>
+    </div> -->
+    <ng-container *ngFor="let book of books" >
+      <app-book [book]="book"></app-book>
+    </ng-container>
+  </div>
+</div>

@@ -12,6 +12,12 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import { ForgotPasswordComponent } from './Components/forgot-password/forgot-password.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
+import { BookComponent } from './Components/book/book.component';
+import { DisplayBookComponent } from './Components/display-book/display-book.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ViewBookComponent } from './Components/view-book/view-book.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +25,9 @@ import { DashboardComponent } from './Components/dashboard/dashboard.component';
     LoginComponent,
     ForgotPasswordComponent,
     DashboardComponent,
+    BookComponent,
+    DisplayBookComponent,
+    ViewBookComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +36,11 @@ import { DashboardComponent } from './Components/dashboard/dashboard.component';
     MatFormFieldModule,
     MatIconModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatExpansionModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration(),
