@@ -7,6 +7,7 @@ import { BookComponent } from './Components/book/book.component';
 import { DisplayBookComponent } from './Components/display-book/display-book.component';
 import { ViewBookComponent } from './Components/view-book/view-book.component';
 import { PersonalDetailsComponent } from './Components/personal-details/personal-details.component';
+import { OrderPlacedComponent } from './Components/order-placed/order-placed.component';
 
 const routes: Routes = [
   {path: 'login', component:LoginComponent},
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path: 'book', component:BookComponent},
   {path: 'display', component:DisplayBookComponent},
   {path: 'viewbook', component:ViewBookComponent},
-  {path: 'personal', component:PersonalDetailsComponent}
+  {path: 'personal', component:PersonalDetailsComponent},
+  {path: 'placed', component:OrderPlacedComponent}
 ];
 
 @NgModule({

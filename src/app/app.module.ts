@@ -19,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ViewBookComponent } from './Components/view-book/view-book.component';
 import { PersonalDetailsComponent } from './Components/personal-details/personal-details.component';
-
+import { OrderPlacedComponent } from './Components/order-placed/order-placed.component';
+import { MatTableModule } from '@angular/material/table';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +31,7 @@ import { PersonalDetailsComponent } from './Components/personal-details/personal
     DisplayBookComponent,
     ViewBookComponent,
     PersonalDetailsComponent,
+    OrderPlacedComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +44,8 @@ import { PersonalDetailsComponent } from './Components/personal-details/personal
     MatExpansionModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatTableModule
   ],
   providers: [
     provideClientHydration(),
